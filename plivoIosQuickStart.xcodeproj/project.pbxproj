@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A5088421883602002B177C /* UtilClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5079421882AAA002B177C /* UtilClass.swift */; };
+		28A5088521883621002B177C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5079621882AAA002B177C /* Phone.swift */; };
+		28A508862188362A002B177C /* CallKitInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5079821882AAA002B177C /* CallKitInstance.swift */; };
+		28A508882188377A002B177C /* PlivoVoiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A508872188377A002B177C /* PlivoVoiceKit.framework */; };
 		28E44F73218824560099EF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F72218824560099EF64 /* AppDelegate.swift */; };
 		28E44F75218824560099EF64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F74218824560099EF64 /* ViewController.swift */; };
 		28E44F78218824560099EF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E44F76218824560099EF64 /* Main.storyboard */; };
@@ -14,6 +18,9 @@
 		28E44F7D218824580099EF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E44F7B218824580099EF64 /* LaunchScreen.storyboard */; };
 		28E44F88218824590099EF64 /* plivoIosQuickStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F87218824590099EF64 /* plivoIosQuickStartTests.swift */; };
 		28E44F93218824590099EF64 /* plivoIosQuickStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F92218824590099EF64 /* plivoIosQuickStartUITests.swift */; };
+		41E11ACC82C503BB990B456E /* Pods_plivoIosQuickStart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156880623B6EA7BC0F4B4EEE /* Pods_plivoIosQuickStart.framework */; };
+		6E89A5142869DE54C586D223 /* Pods_plivoIosQuickStartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54DE3E8CF9A1A27D7AE739C /* Pods_plivoIosQuickStartTests.framework */; };
+		FCE7A409D8E7F7BA7AE2FACF /* Pods_plivoIosQuickStartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209ECFAE6598FE806F217E6C /* Pods_plivoIosQuickStartUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0929AE444EB686E39B66B07B /* Pods-plivoIosQuickStartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plivoIosQuickStartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-plivoIosQuickStartUITests/Pods-plivoIosQuickStartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		156880623B6EA7BC0F4B4EEE /* Pods_plivoIosQuickStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plivoIosQuickStart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16E69822E2E4B1D9A32CB227 /* Pods-plivoIosQuickStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plivoIosQuickStart.release.xcconfig"; path = "Pods/Target Support Files/Pods-plivoIosQuickStart/Pods-plivoIosQuickStart.release.xcconfig"; sourceTree = "<group>"; };
+		209ECFAE6598FE806F217E6C /* Pods_plivoIosQuickStartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plivoIosQuickStartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28A5079421882AAA002B177C /* UtilClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UtilClass.swift; path = "App Files/UtilClass.swift"; sourceTree = "<group>"; };
+		28A5079521882AAA002B177C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = "App Files/Constants.h"; sourceTree = "<group>"; };
+		28A5079621882AAA002B177C /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Phone.swift; path = "App Files/Phone.swift"; sourceTree = "<group>"; };
+		28A5079821882AAA002B177C /* CallKitInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CallKitInstance.swift; path = "App Files/CallKitInstance.swift"; sourceTree = "<group>"; };
+		28A508872188377A002B177C /* PlivoVoiceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlivoVoiceKit.framework; path = Frameworks/PlivoVoiceKit.framework; sourceTree = "<group>"; };
+		28A5088A2188397B002B177C /* plivoIosQuickStart-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "plivoIosQuickStart-Bridging-Header.h"; sourceTree = "<group>"; };
 		28E44F6F218824560099EF64 /* plivoIosQuickStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plivoIosQuickStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E44F72218824560099EF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E44F74218824560099EF64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,11 @@
 		28E44F8E218824590099EF64 /* plivoIosQuickStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plivoIosQuickStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E44F92218824590099EF64 /* plivoIosQuickStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plivoIosQuickStartUITests.swift; sourceTree = "<group>"; };
 		28E44F94218824590099EF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B192074EC04321525FD243 /* Pods-plivoIosQuickStartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plivoIosQuickStartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plivoIosQuickStartTests/Pods-plivoIosQuickStartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DBAB878441DDC16939A2080 /* Pods-plivoIosQuickStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plivoIosQuickStart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plivoIosQuickStart/Pods-plivoIosQuickStart.debug.xcconfig"; sourceTree = "<group>"; };
+		666405C796B5937E20006E63 /* Pods-plivoIosQuickStartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plivoIosQuickStartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-plivoIosQuickStartUITests/Pods-plivoIosQuickStartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		744CAB84F7178F9EDC261230 /* Pods-plivoIosQuickStartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-plivoIosQuickStartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-plivoIosQuickStartTests/Pods-plivoIosQuickStartTests.release.xcconfig"; sourceTree = "<group>"; };
+		E54DE3E8CF9A1A27D7AE739C /* Pods_plivoIosQuickStartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_plivoIosQuickStartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A508882188377A002B177C /* PlivoVoiceKit.framework in Frameworks */,
+				41E11ACC82C503BB990B456E /* Pods_plivoIosQuickStart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E89A5142869DE54C586D223 /* Pods_plivoIosQuickStartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE7A409D8E7F7BA7AE2FACF /* Pods_plivoIosQuickStartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,8 @@
 				28E44F86218824590099EF64 /* plivoIosQuickStartTests */,
 				28E44F91218824590099EF64 /* plivoIosQuickStartUITests */,
 				28E44F70218824560099EF64 /* Products */,
+				A71232BA14E35D94AEF0EEDE /* Pods */,
+				587D0E945C0A4DC130C8E0C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +125,11 @@
 		28E44F71218824560099EF64 /* plivoIosQuickStart */ = {
 			isa = PBXGroup;
 			children = (
+				28A5088A2188397B002B177C /* plivoIosQuickStart-Bridging-Header.h */,
+				28A5079821882AAA002B177C /* CallKitInstance.swift */,
+				28A5079621882AAA002B177C /* Phone.swift */,
+				28A5079521882AAA002B177C /* Constants.h */,
+				28A5079421882AAA002B177C /* UtilClass.swift */,
 				28E44F72218824560099EF64 /* AppDelegate.swift */,
 				28E44F74218824560099EF64 /* ViewController.swift */,
 				28E44F76218824560099EF64 /* Main.storyboard */,
@@ -125,6 +158,30 @@
 			path = plivoIosQuickStartUITests;
 			sourceTree = "<group>";
 		};
+		587D0E945C0A4DC130C8E0C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A508872188377A002B177C /* PlivoVoiceKit.framework */,
+				156880623B6EA7BC0F4B4EEE /* Pods_plivoIosQuickStart.framework */,
+				E54DE3E8CF9A1A27D7AE739C /* Pods_plivoIosQuickStartTests.framework */,
+				209ECFAE6598FE806F217E6C /* Pods_plivoIosQuickStartUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A71232BA14E35D94AEF0EEDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DBAB878441DDC16939A2080 /* Pods-plivoIosQuickStart.debug.xcconfig */,
+				16E69822E2E4B1D9A32CB227 /* Pods-plivoIosQuickStart.release.xcconfig */,
+				37B192074EC04321525FD243 /* Pods-plivoIosQuickStartTests.debug.xcconfig */,
+				744CAB84F7178F9EDC261230 /* Pods-plivoIosQuickStartTests.release.xcconfig */,
+				666405C796B5937E20006E63 /* Pods-plivoIosQuickStartUITests.debug.xcconfig */,
+				0929AE444EB686E39B66B07B /* Pods-plivoIosQuickStartUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +189,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E44F97218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStart" */;
 			buildPhases = (
+				108D6672FA631575843C7904 /* [CP] Check Pods Manifest.lock */,
 				28E44F6B218824560099EF64 /* Sources */,
 				28E44F6C218824560099EF64 /* Frameworks */,
 				28E44F6D218824560099EF64 /* Resources */,
@@ -149,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E44F9A218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStartTests" */;
 			buildPhases = (
+				5889C5D708014843B7A26728 /* [CP] Check Pods Manifest.lock */,
 				28E44F7F218824590099EF64 /* Sources */,
 				28E44F80218824590099EF64 /* Frameworks */,
 				28E44F81218824590099EF64 /* Resources */,
@@ -167,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E44F9D218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStartUITests" */;
 			buildPhases = (
+				079489FC678E9E3C3F7D48D9 /* [CP] Check Pods Manifest.lock */,
 				28E44F8A218824590099EF64 /* Sources */,
 				28E44F8B218824590099EF64 /* Frameworks */,
 				28E44F8C218824590099EF64 /* Resources */,
@@ -251,13 +311,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		079489FC678E9E3C3F7D48D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plivoIosQuickStartUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		108D6672FA631575843C7904 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plivoIosQuickStart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5889C5D708014843B7A26728 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-plivoIosQuickStartTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28E44F6B218824560099EF64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A5088521883621002B177C /* Phone.swift in Sources */,
+				28A5088421883602002B177C /* UtilClass.swift in Sources */,
 				28E44F75218824560099EF64 /* ViewController.swift in Sources */,
 				28E44F73218824560099EF64 /* AppDelegate.swift in Sources */,
+				28A508862188362A002B177C /* CallKitInstance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +550,16 @@
 		};
 		28E44F98218824590099EF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBAB878441DDC16939A2080 /* Pods-plivoIosQuickStart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A277824BB5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/plivoIosQuickStart",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = plivoIosQuickStart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +567,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "plivoIosQuickStart/plivoIosQuickStart-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,10 +575,16 @@
 		};
 		28E44F99218824590099EF64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E69822E2E4B1D9A32CB227 /* Pods-plivoIosQuickStart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A277824BB5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/plivoIosQuickStart",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = plivoIosQuickStart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +592,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "plivoIosQuickStart/plivoIosQuickStart-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +600,7 @@
 		};
 		28E44F9B218824590099EF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B192074EC04321525FD243 /* Pods-plivoIosQuickStartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +622,7 @@
 		};
 		28E44F9C218824590099EF64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744CAB84F7178F9EDC261230 /* Pods-plivoIosQuickStartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +644,7 @@
 		};
 		28E44F9E218824590099EF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 666405C796B5937E20006E63 /* Pods-plivoIosQuickStartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +665,7 @@
 		};
 		28E44F9F218824590099EF64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0929AE444EB686E39B66B07B /* Pods-plivoIosQuickStartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30647694B59407A30B3382429B30D3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		3834A577252A4187ED963008D48DC341 /* Pods-plivoIosQuickStartTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 107CE82DE153799917CCC90948A2404B /* Pods-plivoIosQuickStartTests-dummy.m */; };
+		5907BBF5820DF8A9C383C5F56C842CF9 /* Pods-plivoIosQuickStartTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39113AA8DCF243E757506E37537DA5CD /* Pods-plivoIosQuickStartTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84FF04C380400606F42CF41D912C7AC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9E82BC7DE8AE8411C0208F7B1967759C /* Pods-plivoIosQuickStart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DE43C99D10986A6069AE4493A4D485 /* Pods-plivoIosQuickStart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C29F749390FB9D97DA8346CE0A06CE7F /* Pods-plivoIosQuickStart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98553CC65EE0BE0E860CD1AFA0A77958 /* Pods-plivoIosQuickStart-dummy.m */; };
+		C32F891310CB0C43A49C9087DF8CFBF9 /* Pods-plivoIosQuickStartUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6586F79364A4F773BC65996C6120A /* Pods-plivoIosQuickStartUITests-dummy.m */; };
+		F75EFCEF93568877F150AFF14A1256EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		FBE1EED6EBD53A3AC859D7F2EFA982AB /* Pods-plivoIosQuickStartUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F52B13525FD0897853A6F0CD6CB3BBBC /* Pods-plivoIosQuickStartUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36F0F3D50AFE16468F5C9FBAADF8555C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49BE5E46E5815B6A94B80DFFACB019F2;
+			remoteInfo = "Pods-plivoIosQuickStart";
+		};
+		B35D51F43B415E9A9C5F1CF5E93D3121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49BE5E46E5815B6A94B80DFFACB019F2;
+			remoteInfo = "Pods-plivoIosQuickStart";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05DBCE192AEE38A7F2078404D9E58430 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4FA48F1E0D0FA2EB33E7F1DBDA5405 /* Pods-plivoIosQuickStartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plivoIosQuickStartTests.release.xcconfig"; sourceTree = "<group>"; };
+		107CE82DE153799917CCC90948A2404B /* Pods-plivoIosQuickStartTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-plivoIosQuickStartTests-dummy.m"; sourceTree = "<group>"; };
+		270E948D8697163F3511395F95546B15 /* Pods-plivoIosQuickStartUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-plivoIosQuickStartUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		32A3BD2AC5AFF952279BEB6C8151DE00 /* Pods-plivoIosQuickStart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-plivoIosQuickStart.modulemap"; sourceTree = "<group>"; };
+		36D6B989181BF0BF8FA2C270106650E5 /* Pods-plivoIosQuickStart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plivoIosQuickStart.debug.xcconfig"; sourceTree = "<group>"; };
+		39113AA8DCF243E757506E37537DA5CD /* Pods-plivoIosQuickStartTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-plivoIosQuickStartTests-umbrella.h"; sourceTree = "<group>"; };
+		39C642F69275C1192AFB13500EEA059C /* Pods-plivoIosQuickStartUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plivoIosQuickStartUITests-resources.sh"; sourceTree = "<group>"; };
+		3AB598F0A9E3CF380C5712CC897BEEF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41CE81D50A99DE58D0565F6B2689A7AD /* Pods-plivoIosQuickStart-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-plivoIosQuickStart-acknowledgements.plist"; sourceTree = "<group>"; };
+		46F87AC98351D74B6E9B80D4D8037FC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50CECCB9A4C63EFB7554E81B6AB4F646 /* Pods-plivoIosQuickStartTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-plivoIosQuickStartTests.modulemap"; sourceTree = "<group>"; };
+		56EDC0DF1D0B4C4640078086D51E6AE0 /* Pods-plivoIosQuickStartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plivoIosQuickStartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58468D02D4A4E523955E46202C16E8B3 /* Pods-plivoIosQuickStartTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-plivoIosQuickStartTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		603686DF86061908C12E51E310AE4341 /* Pods-plivoIosQuickStartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plivoIosQuickStartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77DE43C99D10986A6069AE4493A4D485 /* Pods-plivoIosQuickStart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-plivoIosQuickStart-umbrella.h"; sourceTree = "<group>"; };
+		7ED3A3EC15C07E16600C255829CD419F /* Pods-plivoIosQuickStart-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plivoIosQuickStart-frameworks.sh"; sourceTree = "<group>"; };
+		8CCC31473E5C8B5C150DE933FA46F193 /* Pods-plivoIosQuickStart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plivoIosQuickStart.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9751F28C0A5FCB22645617760CD64FF9 /* Pods-plivoIosQuickStart-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-plivoIosQuickStart-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98553CC65EE0BE0E860CD1AFA0A77958 /* Pods-plivoIosQuickStart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-plivoIosQuickStart-dummy.m"; sourceTree = "<group>"; };
+		9EF6586F79364A4F773BC65996C6120A /* Pods-plivoIosQuickStartUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-plivoIosQuickStartUITests-dummy.m"; sourceTree = "<group>"; };
+		A5206F2184AA3F2D7E6572FE56439128 /* Pods_plivoIosQuickStartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_plivoIosQuickStartTests.framework; path = "Pods-plivoIosQuickStartTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B737D2335EFAC68B7DA747692DDE9A00 /* Pods-plivoIosQuickStartTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plivoIosQuickStartTests-frameworks.sh"; sourceTree = "<group>"; };
+		C1740B63404B0488CA73C64A0A7B8460 /* Pods_plivoIosQuickStart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_plivoIosQuickStart.framework; path = "Pods-plivoIosQuickStart.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BA0E3856D8B7CF4FE65783EA4A0043 /* Pods-plivoIosQuickStartUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-plivoIosQuickStartUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB8D1DED89C805CA8889E5BB9E1DC94F /* Pods-plivoIosQuickStartTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-plivoIosQuickStartTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D09767AD8B3379EA0E2F28C07D811757 /* Pods_plivoIosQuickStartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_plivoIosQuickStartUITests.framework; path = "Pods-plivoIosQuickStartUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B8D3693A7B6854B7A6B82EFD639A0 /* Pods-plivoIosQuickStartUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plivoIosQuickStartUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DD6DCF768BF5BFED3B99DDAF3BCD8E5F /* Pods-plivoIosQuickStartUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-plivoIosQuickStartUITests.modulemap"; sourceTree = "<group>"; };
+		DEE937D49232BB5BCC58F5F07F2153B1 /* Pods-plivoIosQuickStartTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plivoIosQuickStartTests-resources.sh"; sourceTree = "<group>"; };
+		F11A01CEF432642AC1239960AC1D27CB /* Pods-plivoIosQuickStart-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-plivoIosQuickStart-resources.sh"; sourceTree = "<group>"; };
+		F2582F661806FC2F64F50182BA24205F /* Pods-plivoIosQuickStartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-plivoIosQuickStartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F52B13525FD0897853A6F0CD6CB3BBBC /* Pods-plivoIosQuickStartUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-plivoIosQuickStartUITests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58D9AF39F290E11D3D3E0BD839FAE2CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75EFCEF93568877F150AFF14A1256EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B533C40C9FA50DCD34728001243C2223 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30647694B59407A30B3382429B30D3D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C41282880155145006A9801E5AAA58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FF04C380400606F42CF41D912C7AC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1894E8479D7B5EE889CE8CB9A6C7628D /* Pods-plivoIosQuickStartTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AB598F0A9E3CF380C5712CC897BEEF6 /* Info.plist */,
+				50CECCB9A4C63EFB7554E81B6AB4F646 /* Pods-plivoIosQuickStartTests.modulemap */,
+				CB8D1DED89C805CA8889E5BB9E1DC94F /* Pods-plivoIosQuickStartTests-acknowledgements.markdown */,
+				58468D02D4A4E523955E46202C16E8B3 /* Pods-plivoIosQuickStartTests-acknowledgements.plist */,
+				107CE82DE153799917CCC90948A2404B /* Pods-plivoIosQuickStartTests-dummy.m */,
+				B737D2335EFAC68B7DA747692DDE9A00 /* Pods-plivoIosQuickStartTests-frameworks.sh */,
+				DEE937D49232BB5BCC58F5F07F2153B1 /* Pods-plivoIosQuickStartTests-resources.sh */,
+				39113AA8DCF243E757506E37537DA5CD /* Pods-plivoIosQuickStartTests-umbrella.h */,
+				603686DF86061908C12E51E310AE4341 /* Pods-plivoIosQuickStartTests.debug.xcconfig */,
+				0C4FA48F1E0D0FA2EB33E7F1DBDA5405 /* Pods-plivoIosQuickStartTests.release.xcconfig */,
+			);
+			name = "Pods-plivoIosQuickStartTests";
+			path = "Target Support Files/Pods-plivoIosQuickStartTests";
+			sourceTree = "<group>";
+		};
+		42F7FEF110C4EB587860F327244AA433 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDFBFEEE0946D607EBC7C0D572674AC4 /* Pods-plivoIosQuickStart */,
+				1894E8479D7B5EE889CE8CB9A6C7628D /* Pods-plivoIosQuickStartTests */,
+				970DF5B1C8B89671F2E205702361E56C /* Pods-plivoIosQuickStartUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		72A41B1D6AD8E5A654FD00AE846DFC23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1740B63404B0488CA73C64A0A7B8460 /* Pods_plivoIosQuickStart.framework */,
+				A5206F2184AA3F2D7E6572FE56439128 /* Pods_plivoIosQuickStartTests.framework */,
+				D09767AD8B3379EA0E2F28C07D811757 /* Pods_plivoIosQuickStartUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				72A41B1D6AD8E5A654FD00AE846DFC23 /* Products */,
+				42F7FEF110C4EB587860F327244AA433 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		970DF5B1C8B89671F2E205702361E56C /* Pods-plivoIosQuickStartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46F87AC98351D74B6E9B80D4D8037FC6 /* Info.plist */,
+				DD6DCF768BF5BFED3B99DDAF3BCD8E5F /* Pods-plivoIosQuickStartUITests.modulemap */,
+				C2BA0E3856D8B7CF4FE65783EA4A0043 /* Pods-plivoIosQuickStartUITests-acknowledgements.markdown */,
+				270E948D8697163F3511395F95546B15 /* Pods-plivoIosQuickStartUITests-acknowledgements.plist */,
+				9EF6586F79364A4F773BC65996C6120A /* Pods-plivoIosQuickStartUITests-dummy.m */,
+				D41B8D3693A7B6854B7A6B82EFD639A0 /* Pods-plivoIosQuickStartUITests-frameworks.sh */,
+				39C642F69275C1192AFB13500EEA059C /* Pods-plivoIosQuickStartUITests-resources.sh */,
+				F52B13525FD0897853A6F0CD6CB3BBBC /* Pods-plivoIosQuickStartUITests-umbrella.h */,
+				F2582F661806FC2F64F50182BA24205F /* Pods-plivoIosQuickStartUITests.debug.xcconfig */,
+				56EDC0DF1D0B4C4640078086D51E6AE0 /* Pods-plivoIosQuickStartUITests.release.xcconfig */,
+			);
+			name = "Pods-plivoIosQuickStartUITests";
+			path = "Target Support Files/Pods-plivoIosQuickStartUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDFBFEEE0946D607EBC7C0D572674AC4 /* Pods-plivoIosQuickStart */ = {
+			isa = PBXGroup;
+			children = (
+				05DBCE192AEE38A7F2078404D9E58430 /* Info.plist */,
+				32A3BD2AC5AFF952279BEB6C8151DE00 /* Pods-plivoIosQuickStart.modulemap */,
+				9751F28C0A5FCB22645617760CD64FF9 /* Pods-plivoIosQuickStart-acknowledgements.markdown */,
+				41CE81D50A99DE58D0565F6B2689A7AD /* Pods-plivoIosQuickStart-acknowledgements.plist */,
+				98553CC65EE0BE0E860CD1AFA0A77958 /* Pods-plivoIosQuickStart-dummy.m */,
+				7ED3A3EC15C07E16600C255829CD419F /* Pods-plivoIosQuickStart-frameworks.sh */,
+				F11A01CEF432642AC1239960AC1D27CB /* Pods-plivoIosQuickStart-resources.sh */,
+				77DE43C99D10986A6069AE4493A4D485 /* Pods-plivoIosQuickStart-umbrella.h */,
+				36D6B989181BF0BF8FA2C270106650E5 /* Pods-plivoIosQuickStart.debug.xcconfig */,
+				8CCC31473E5C8B5C150DE933FA46F193 /* Pods-plivoIosQuickStart.release.xcconfig */,
+			);
+			name = "Pods-plivoIosQuickStart";
+			path = "Target Support Files/Pods-plivoIosQuickStart";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DB77BF3840BA81571731CEC62134FA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE1EED6EBD53A3AC859D7F2EFA982AB /* Pods-plivoIosQuickStartUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45750670BE261850C9B0CD224311A7DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5907BBF5820DF8A9C383C5F56C842CF9 /* Pods-plivoIosQuickStartTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A686A509F167F51AFC7F618C7E2D33F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E82BC7DE8AE8411C0208F7B1967759C /* Pods-plivoIosQuickStart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31E37343B509FCA6FC4BE544E449BE38 /* Pods-plivoIosQuickStartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34775403473BA31C76AFE7A7024C8051 /* Build configuration list for PBXNativeTarget "Pods-plivoIosQuickStartTests" */;
+			buildPhases = (
+				F6D6C2274A182A75761CB49279CBFDB7 /* Sources */,
+				B533C40C9FA50DCD34728001243C2223 /* Frameworks */,
+				45750670BE261850C9B0CD224311A7DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				808191852D6A1CCC5E02A23967BE37C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-plivoIosQuickStartTests";
+			productName = "Pods-plivoIosQuickStartTests";
+			productReference = A5206F2184AA3F2D7E6572FE56439128 /* Pods_plivoIosQuickStartTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		49BE5E46E5815B6A94B80DFFACB019F2 /* Pods-plivoIosQuickStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F28FB6C92CEC880341CE4ECD263FFC /* Build configuration list for PBXNativeTarget "Pods-plivoIosQuickStart" */;
+			buildPhases = (
+				36F44C12CE5EA736C98ACEA17F67B80F /* Sources */,
+				58D9AF39F290E11D3D3E0BD839FAE2CF /* Frameworks */,
+				A686A509F167F51AFC7F618C7E2D33F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-plivoIosQuickStart";
+			productName = "Pods-plivoIosQuickStart";
+			productReference = C1740B63404B0488CA73C64A0A7B8460 /* Pods_plivoIosQuickStart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84C4ECCE5AE9408B3E49DB7BA9BEA69E /* Pods-plivoIosQuickStartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 807535C7856DC9033925C945D8CA46A1 /* Build configuration list for PBXNativeTarget "Pods-plivoIosQuickStartUITests" */;
+			buildPhases = (
+				AD89D8B451EB0BA7E7CD169FAE93E9E4 /* Sources */,
+				C7C41282880155145006A9801E5AAA58 /* Frameworks */,
+				3DB77BF3840BA81571731CEC62134FA9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093125AE083CFC9DD2E1CDE63AF041F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-plivoIosQuickStartUITests";
+			productName = "Pods-plivoIosQuickStartUITests";
+			productReference = D09767AD8B3379EA0E2F28C07D811757 /* Pods_plivoIosQuickStartUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 72A41B1D6AD8E5A654FD00AE846DFC23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49BE5E46E5815B6A94B80DFFACB019F2 /* Pods-plivoIosQuickStart */,
+				31E37343B509FCA6FC4BE544E449BE38 /* Pods-plivoIosQuickStartTests */,
+				84C4ECCE5AE9408B3E49DB7BA9BEA69E /* Pods-plivoIosQuickStartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36F44C12CE5EA736C98ACEA17F67B80F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29F749390FB9D97DA8346CE0A06CE7F /* Pods-plivoIosQuickStart-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD89D8B451EB0BA7E7CD169FAE93E9E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F891310CB0C43A49C9087DF8CFBF9 /* Pods-plivoIosQuickStartUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D6C2274A182A75761CB49279CBFDB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3834A577252A4187ED963008D48DC341 /* Pods-plivoIosQuickStartTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093125AE083CFC9DD2E1CDE63AF041F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-plivoIosQuickStart";
+			target = 49BE5E46E5815B6A94B80DFFACB019F2 /* Pods-plivoIosQuickStart */;
+			targetProxy = 36F0F3D50AFE16468F5C9FBAADF8555C /* PBXContainerItemProxy */;
+		};
+		808191852D6A1CCC5E02A23967BE37C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-plivoIosQuickStart";
+			target = 49BE5E46E5815B6A94B80DFFACB019F2 /* Pods-plivoIosQuickStart */;
+			targetProxy = B35D51F43B415E9A9C5F1CF5E93D3121 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		690F5C4A59E42D95479C2F5DB70106B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2582F661806FC2F64F50182BA24205F /* Pods-plivoIosQuickStartUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-plivoIosQuickStartUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-plivoIosQuickStartUITests/Pods-plivoIosQuickStartUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70767943BB7E9726DFC857878B758A01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCC31473E5C8B5C150DE933FA46F193 /* Pods-plivoIosQuickStart.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-plivoIosQuickStart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-plivoIosQuickStart/Pods-plivoIosQuickStart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		766A5C97B41F2E3D5907A2E5F1B53B10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D6B989181BF0BF8FA2C270106650E5 /* Pods-plivoIosQuickStart.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-plivoIosQuickStart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-plivoIosQuickStart/Pods-plivoIosQuickStart.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E460EF9B4F65525258D1759806C7331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603686DF86061908C12E51E310AE4341 /* Pods-plivoIosQuickStartTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-plivoIosQuickStartTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-plivoIosQuickStartTests/Pods-plivoIosQuickStartTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9A62BCB858161AB128FA20C33621B9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4FA48F1E0D0FA2EB33E7F1DBDA5405 /* Pods-plivoIosQuickStartTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-plivoIosQuickStartTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-plivoIosQuickStartTests/Pods-plivoIosQuickStartTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EF1D451603767ED8A7BA7CD761D0D87B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56EDC0DF1D0B4C4640078086D51E6AE0 /* Pods-plivoIosQuickStartUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-plivoIosQuickStartUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-plivoIosQuickStartUITests/Pods-plivoIosQuickStartUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
+				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34775403473BA31C76AFE7A7024C8051 /* Build configuration list for PBXNativeTarget "Pods-plivoIosQuickStartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E460EF9B4F65525258D1759806C7331 /* Debug */,
+				9A62BCB858161AB128FA20C33621B9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		807535C7856DC9033925C945D8CA46A1 /* Build configuration list for PBXNativeTarget "Pods-plivoIosQuickStartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690F5C4A59E42D95479C2F5DB70106B6 /* Debug */,
+				EF1D451603767ED8A7BA7CD761D0D87B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F28FB6C92CEC880341CE4ECD263FFC /* Build configuration list for PBXNativeTarget "Pods-plivoIosQuickStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766A5C97B41F2E3D5907A2E5F1B53B10 /* Debug */,
+				70767943BB7E9726DFC857878B758A01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
