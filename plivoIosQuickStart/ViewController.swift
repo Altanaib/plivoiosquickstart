@@ -9,6 +9,9 @@
 import UIKit
 import CallKit
 import PlivoVoiceKit
+import AVFoundation
+
+
 
 class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelegate, JCDialPadDelegate, PlivoEndpointDelegate {
 
@@ -67,19 +70,20 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
             appDelegate?.voipRegistration()
             print("Ready to make a call");
             
-            pad = JCDialPad(frame: dialPadView.bounds)
-            pad?.buttons = JCDialPad.defaultButtons()
-            pad?.delegate = self
-            pad?.showDeleteButton = true
-            pad?.formatTextToPhoneNumber = false
-            dialPadView.backgroundColor = UIColor.white
-            dialPadView.addSubview(pad!)
-            timer = MZTimerLabel(label: callStateLabel, andTimerType: MZTimerLabelTypeStopWatch)
-            timer?.timeFormat = "HH:mm:ss"
+            self.pad = JCDialPad(frame: self.dialPadView.bounds)
+            self.pad?.buttons = JCDialPad.defaultButtons()
+            self.pad?.delegate = self
+            self.pad?.showDeleteButton = true
+            self.pad?.formatTextToPhoneNumber = false
+            self.dialPadView.backgroundColor = UIColor.white
+            self.dialPadView.addSubview(self.pad!)
+            self.timer = MZTimerLabel(label: self.callStateLabel, andTimerType: MZTimerLabelTypeStopWatch)
+            self.timer?.timeFormat = "HH:mm:ss"
             CallKitInstance.sharedInstance.callKitProvider?.setDelegate(self, queue: DispatchQueue.main)
             CallKitInstance.sharedInstance.callObserver?.setDelegate(self, queue: DispatchQueue.main)
+            
             //Add Call Interruption observers
-            addObservers()
+            //self.addObservers()
             
         })
     }
@@ -131,25 +135,16 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
         return true
     }
     
-    func addObservers() {
-        // add interruption handler
-        NotificationCenter.default.addObserver(self, selector: #selector(PlivoCallController.handleInterruption), name: NSNotification.Name.AVAudioSessionInterruption, object: AVAudioSession.sharedInstance())
-        // we don't do anything special in the route change notification
-        NotificationCenter.default.addObserver(self, selector: #selector(PlivoCallController.handleRouteChange), name: NSNotification.Name.AVAudioSessionRouteChange, object: AVAudioSession.sharedInstance())
-        // if media services are reset, we need to rebuild our audio chain
-        NotificationCenter.default.addObserver(self, selector: #selector(PlivoCallController.handleMediaServerReset), name: NSNotification.Name.AVAudioSessionMediaServicesWereReset, object: AVAudioSession.sharedInstance())
-        NotificationCenter.default.addObserver(self, selector: #selector(PlivoCallController.appWillTerminate), name: NSNotification.Name.UIApplicationWillTerminate, object: nil)
-        
-        //To check Network Reachability
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged),name: ReachabilityChangedNotification,object: reachability)
-        do{
-            try reachability.startNotifier()
-        }catch{
-            print("could not start reachability notifier")
-        }
-    }
-    
-    
+//    func addObservers() {
+//        // add interruption handler
+//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.handleInterruption), name: NSNotification.Name.AVAudioSession.interruptionNotification, object: AVAudioSession.sharedInstance())
+//        // we don't do anything special in the route change notification
+//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.handleRouteChange), name: NSNotification.Name.AVAudioSession.routeChangeNotification, object: AVAudioSession.sharedInstance())
+//        // if media services are reset, we need to rebuild our audio chain
+//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.handleMediaServerReset), name: NSNotification.Name.AVAudioSession.mediaServicesWereResetNotification, object: AVAudioSession.sharedInstance())
+//        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.appWillTerminate), name: NSNotification.Name.UIApplication.willTerminateNotification, object: nil)
+//
+//    }
     
     
     
@@ -160,9 +155,9 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
     
     func onIncomingCall(_ incoming: PlivoIncoming) {
         
-        switch AVAudioSession.sharedInstance().recordPermission()
+        switch AVAudioSession.sharedInstance().recordPermission
         {
-        case AVAudioSessionRecordPermission.granted:
+        case AVAudioSession.RecordPermission.granted:
             
             print("Permission granted")
             
@@ -197,13 +192,13 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
             }
             break
             
-        case AVAudioSessionRecordPermission.denied:
+        case AVAudioSession.RecordPermission.denied:
             print("Pemission denied")
-            //UtilClass.makeToast("Please go to settings and turn on Microphone service for incoming/outgoing calls.")
+            print("Please go to settings and turn on Microphone service for incoming/outgoing calls.")
             incoming.reject()
             break
             
-        case AVAudioSessionRecordPermission.undetermined:
+        case AVAudioSession.RecordPermission.undetermined:
             print("Request permission here")
             break
             
@@ -327,9 +322,9 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
     func performStartCallAction(with uuid: UUID, handle: String) {
         
 
-        switch AVAudioSession.sharedInstance().recordPermission() {
+        switch AVAudioSession.sharedInstance().recordPermission {
                 
-            case AVAudioSessionRecordPermission.granted:
+        case AVAudioSession.RecordPermission.granted:
                 print("Permission granted");
                 hideActiveCallView()
                 unhideActiveCallView()
@@ -376,10 +371,10 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
                     }
                 })
                 break
-            case AVAudioSessionRecordPermission.denied:
+        case AVAudioSession.RecordPermission.denied:
                 print("Please go to settings and turn on Microphone service for incoming/outgoing calls.");
                 break
-            case AVAudioSessionRecordPermission.undetermined:
+        case AVAudioSession.RecordPermission.undetermined:
                 // This is the initial state before a user has made any choice
                 // You can use this spot to request permission here if you want
                 break
@@ -500,7 +495,7 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
         print("providerDidBegin");
     }
     
-    func provider(_ provider: CXProvider, didActivate audioSession: AVAudioSession) {
+    private func provider(_ provider: CXProvider, didActivate audioSession: AVAudioSession) {
         print("provider:didActivateAudioSession");
         Phone.sharedInstance.startAudioDevice()
     }
@@ -641,16 +636,16 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
         
         if UtilClass.isNetworkAvailable(){
             
-            switch AVAudioSession.sharedInstance().recordPermission() {
+            switch AVAudioSession.sharedInstance().recordPermission {
                 
-            case AVAudioSessionRecordPermission.granted:
+            case AVAudioSession.RecordPermission.granted:
                 
                 if (!(userNameTextField.text! == "SIP URI or Phone Number") && !UtilClass.isEmpty(userNameTextField.text!)) || !UtilClass.isEmpty(pad!.digitsTextField.text!) || (incCall != nil) || (outCall != nil) {
                     
                     let img: UIImage? = (sender as AnyObject).image(for: .normal)
-                    let data1: NSData? = UIImagePNGRepresentation(img!) as NSData?
+                    let data1: NSData? = img!.pngData() as NSData?
                     
-                    if (data1?.isEqual(UIImagePNGRepresentation(UIImage(named: "MakeCall.png")!)))! {
+                    if (data1?.isEqual(UIImage(named: "MakeCall.png")!.pngData()))! {
                         
                         callStateLabel.text = "Calling..."
                         callerNameLabel.text = pad?.digitsTextField.text
@@ -663,7 +658,7 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
                             handle = userNameTextField.text!
                         }
                         else {
-                            UtilClass.makeToast(kINVALIDSIPENDPOINTMSG)
+                            //UtilClass.makeToast(kINVALIDSIPENDPOINTMSG)
                             return
                         }
                         
@@ -675,20 +670,20 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
                         performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: handle)
                         
                     }
-                    else if (data1?.isEqual(UIImagePNGRepresentation(UIImage(named: "EndCall.png")!)))! {
+                    else if (data1?.isEqual(UIImage(named: "EndCall.png")!.pngData()))! {
                         
                         isItUserAction = true
                         performEndCallAction(with: CallKitInstance.sharedInstance.callUUID!)
                     }
                 }
                 else {
-                    UtilClass.makeToast(kINVALIDSIPENDPOINTMSG)
+                    print(kINVALIDSIPENDPOINTMSG);
                 }
                 break
-            case AVAudioSessionRecordPermission.denied:
-                UtilClass.makeToast("Please go to settings and turn on Microphone service for incoming/outgoing calls.")
+            case AVAudioSession.RecordPermission.denied:
+                print("Please go to settings and turn on Microphone service for incoming/outgoing calls.")
                 break
-            case AVAudioSessionRecordPermission.undetermined:
+            case AVAudioSession.RecordPermission.undetermined:
                 // This is the initial state before a user has made any choice
                 // You can use this spot to request permission here if you want
                 break
@@ -696,7 +691,7 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
                 break
             }
         }else{
-            UtilClass.makeToast("Please connect to internet")
+            print("Please connect to internet")
         }
         
     }
@@ -716,7 +711,7 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
         speakerButton.isHidden = true
         activeCallImageView.isHidden = true
         userNameTextField.text = ""
-        view.bringSubview(toFront: hideButton)
+        view.bringSubviewToFront(hideButton)
         userNameTextField.isHidden = false
         userNameTextField.textColor = UIColor.white
         dialPadView.isHidden = false
@@ -760,9 +755,9 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
     @IBAction func muteButtonTapped(_ sender: Any) {
         let img: UIImage? = (sender as AnyObject).image(for: .normal)
         
-        let data1: NSData? = UIImagePNGRepresentation(img!) as NSData?
+        let data1: NSData? = img!.pngData() as NSData?
         
-        if (data1?.isEqual(UIImagePNGRepresentation(UIImage(named: "Unmute.png")!)))! {
+        if (data1?.isEqual(UIImage(named: "Unmute.png")!.pngData()))! {
             
             DispatchQueue.main.async(execute: {() -> Void in
                 self.muteButton.setImage(UIImage(named: "MuteIcon.png"), for: .normal)
@@ -795,9 +790,9 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
         
         let img: UIImage? = (sender as AnyObject).image(for: .normal)
         
-        let data1: NSData? = UIImagePNGRepresentation(img!) as NSData?
+        let data1: NSData? = img!.pngData() as NSData?
         
-        if (data1?.isEqual(UIImagePNGRepresentation(UIImage(named: "UnholdIcon.png")!)))! {
+        if (data1?.isEqual(UIImage(named: "UnholdIcon.png")!.pngData()))! {
             
             DispatchQueue.main.async(execute: {() -> Void in
                 self.holdButton.setImage(UIImage(named: "HoldIcon.png"), for: .normal)
@@ -844,7 +839,7 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
             self.speakerButton.setImage(UIImage(named: "Speaker.png"), for: .normal)
             
             do {
-                try audioSession.overrideOutputAudioPort(AVAudioSessionPortOverride.none)
+                try audioSession.overrideOutputAudioPort(AVAudioSession.PortOverride.none)
             } catch let error as NSError {
                 print("audioSession error: \(error.localizedDescription)")
             }
@@ -857,7 +852,7 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
             /* Enable Speaker Phone mode */
             
             do {
-                try audioSession.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+                try audioSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
             } catch let error as NSError {
                 print("audioSession error: \(error.localizedDescription)")
             }
@@ -926,14 +921,14 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
      * AVAudioSessionInterruptionTypeEnded
      */
     
-    func handleInterruption(_ notification: Notification)
+    @objc func handleInterruption(_ notification: Notification)
     {
         
         if self.incCall != nil || self.outCall != nil
         {
             guard let userInfo = notification.userInfo,
                 let interruptionTypeRawValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
-                let interruptionType = AVAudioSessionInterruptionType(rawValue: interruptionTypeRawValue) else {
+                let interruptionType = AVAudioSession.InterruptionType(rawValue: interruptionTypeRawValue) else {
                     return
             }
             
@@ -964,12 +959,12 @@ class ViewController: UIViewController, CXProviderDelegate, CXCallObserverDelega
         }
     }
     
-    func handleRouteChange(_ notification: Notification)
+    @objc func handleRouteChange(_ notification: Notification)
     {
         
     }
     
-    func handleMediaServerReset(_ notification: Notification) {
+    @objc func handleMediaServerReset(_ notification: Notification) {
         print("Media server has reset");
         // rebuild the audio chain
         Phone.sharedInstance.configureAudioSession()

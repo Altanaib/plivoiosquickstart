@@ -16,10 +16,8 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
-    var window: UIWindow?
-    var viewController: ContactsViewController?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         //For VOIP Notificaitons
@@ -40,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
                     print("granted")
                     
                     do {
-                        try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
+                        //try session.setCategory(AVAudioSession.Category.playAndRecord)
                         try session.setActive(true)
                     }
                     catch {
@@ -61,21 +59,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
             //Landing page
             let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let tabBarContrler: UITabBarController? = _mainStoryboard.instantiateViewController(withIdentifier: "tabBarViewController") as? UITabBarController
-            viewController = tabBarContrler?.viewControllers?[1] as? ContactsViewController
-            //ContactsViewController
-            Phone.sharedInstance.setDelegate(viewController!)
-            tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[1]
-            window?.rootViewController = tabBarContrler
+           
             //Get Username and Password from NSUserDefaults and Login
-            Phone.sharedInstance.login(withUserName: UserDefaults.standard.object(forKey: kUSERNAME) as! String, andPassword: UserDefaults.standard.object(forKey: kPASSWORD) as! String)
+//            Phone.sharedInstance.login(withUserName: UserDefaults.standard.object(forKey: kUSERNAME) as! String, andPassword: UserDefaults.standard.object(forKey: kPASSWORD) as! String)
         }
-        else {
-            //First time Log-In setup
-            let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginVC: LoginViewController? = _mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
-            Phone.sharedInstance.setDelegate(loginVC!)
-            window?.rootViewController = loginVC
-        }
+
         
         return true
     }
@@ -93,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
     }
     
     // MARK: PKPushRegistryDelegate
-    func pushRegistry(_ registry: PKPushRegistry, didUpdate credentials: PKPushCredentials, forType type: PKPushType) {
+    func pushRegistry(_ registry: PKPushRegistry, didUpdate credentials: PKPushCredentials, for type: PKPushType) {
         
         NSLog("pushRegistry:didUpdatePushCredentials:forType:");
         
@@ -105,13 +93,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
         Phone.sharedInstance.registerToken(credentials.token)
     }
     
-    func pushRegistry(_ registry: PKPushRegistry, didInvalidatePushTokenForType type: PKPushType) {
+    func pushRegistry(_ registry: PKPushRegistry, didInvalidatePushTokenFor type: PKPushType) {
         NSLog("pushRegistry:didInvalidatePushTokenForType:")
-        
-        
     }
     
-    func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, forType type: PKPushType) {
+    func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType) {
         
         NSLog("pushRegistry:didReceiveIncomingPushWithPayload:forType:")
         
@@ -159,7 +145,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
     
     @nonobjc func application(_ app: UIApplication, open url: URL, options: [String: Any]) -> Bool {
         
-        return application(app, processOpenURLAction: url, sourceApplication:UIApplicationOpenURLOptionsKey.sourceApplication.rawValue, annotation: UIApplicationOpenURLOptionsKey.annotation, iosVersion: 9)
+        return application(app, processOpenURLAction: url, sourceApplication:UIApplication.OpenURLOptionsKey.sourceApplication.rawValue, annotation: UIApplication.OpenURLOptionsKey.annotation, iosVersion: 9)
         
     }
     
@@ -170,7 +156,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
     func application(_ application: UIApplication, processOpenURLAction url: URL, sourceApplication: String, annotation: Any, iosVersion version: Int) -> Bool {
         //Deep linking
         let latlngArray: [Any] = url.absoluteString.components(separatedBy: "://")
-        handleDeepLinking(latlngArray[1] as! String)
+        //handleDeepLinking(latlngArray[1] as! String)
         return true
     }
     
@@ -184,57 +170,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PKPushRegistryDelegate, U
             print("\(String(describing: contact?.displayName))")
             let personHandle: INPersonHandle? = contact?.personHandle
             let contactValue: String? = personHandle?.value
-            /*
-             * Handle Siri input
-             * From Siri we will get contact name
-             * Check whether this name exists in phone contacts
-             * If yes make a call
-             */
-            if !(contactValue != nil) && ((contact?.displayName) != nil)
-            {
-                //PlivoCallController handles the incoming/outgoing calls
-                let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let tabBarContrler: UITabBarController? = _mainStoryboard.instantiateViewController(withIdentifier: "tabBarViewController") as? UITabBarController
-                let plivoVC: ContactsViewController? = (tabBarContrler?.viewControllers?[1] as? ContactsViewController)
-                tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[1]
-                plivoVC?.makeCall(withSiriName: (contact?.displayName)!)
-                window?.rootViewController = tabBarContrler
-            }
-            else
-            {
-                //Maintaining unique Call Id
-                //Singleton
-                CallKitInstance.sharedInstance.callUUID = UUID()
-                //PlivoCallController handles the incoming/outgoing calls
-                let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let tabBarContrler: UITabBarController? = _mainStoryboard.instantiateViewController(withIdentifier: "tabBarViewController") as? UITabBarController
-                let plivoVC: PlivoCallController? = (tabBarContrler?.viewControllers?[2] as? PlivoCallController)
-                tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[2]
-                Phone.sharedInstance.setDelegate(plivoVC!)
-                plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: contactValue!)
-                window?.rootViewController = tabBarContrler
-            }
+            
             return true
         }
         else {
-            UtilClass.makeToast("Please login to make a call")
+            print("Please login to make a call");
             return false
         }
     }
     
-    func handleDeepLinking(_ phoneNumber: String) {
-        
-        //Maintaining unique Call Id
-        //Singleton
-        CallKitInstance.sharedInstance.callUUID = UUID()
-        //PlivoCallController handles the incoming/outgoing calls
-        let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBarContrler: UITabBarController? = _mainStoryboard.instantiateViewController(withIdentifier: "tabBarViewController") as? UITabBarController
-        let plivoVC: PlivoCallController? = (tabBarContrler?.viewControllers?[2] as? PlivoCallController)
-        tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[2]
-        Phone.sharedInstance.setDelegate(plivoVC!)
-        plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: phoneNumber)
-        window?.rootViewController = tabBarContrler
-    }
+//    func handleDeepLinking(_ phoneNumber: String) {
+//
+//        //Maintaining unique Call Id
+//        //Singleton
+//        CallKitInstance.sharedInstance.callUUID = UUID()
+//        //PlivoCallController handles the incoming/outgoing calls
+//        let _mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let tabBarContrler: UITabBarController? = _mainStoryboard.instantiateViewController(withIdentifier: "tabBarViewController") as? UITabBarController
+//        let plivoVC: PlivoCallController? = (tabBarContrler?.viewControllers?[2] as? PlivoCallController)
+//        tabBarContrler?.selectedViewController = tabBarContrler?.viewControllers?[2]
+//        Phone.sharedInstance.setDelegate(plivoVC!)
+//        plivoVC?.performStartCallAction(with: CallKitInstance.sharedInstance.callUUID!, handle: phoneNumber)
+//        window?.rootViewController = tabBarContrler
+//    }
 }
 

@@ -11,6 +11,23 @@
 		28A5088521883621002B177C /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5079621882AAA002B177C /* Phone.swift */; };
 		28A508862188362A002B177C /* CallKitInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5079821882AAA002B177C /* CallKitInstance.swift */; };
 		28A508882188377A002B177C /* PlivoVoiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A508872188377A002B177C /* PlivoVoiceKit.framework */; };
+		28A509F921885394002B177C /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5097621885394002B177C /* NBAsYouTypeFormatter.m */; };
+		28A509FA21885394002B177C /* NBPhoneMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5097721885394002B177C /* NBPhoneMetaData.m */; };
+		28A509FB21885394002B177C /* NBPhoneNumberUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5097821885394002B177C /* NBPhoneNumberUtil.m */; };
+		28A509FC21885394002B177C /* NSArray+NBAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5097921885394002B177C /* NSArray+NBAdditions.m */; };
+		28A509FD21885394002B177C /* NBPhoneNumberMetadataForTesting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A5097B21885394002B177C /* NBPhoneNumberMetadataForTesting.plist */; };
+		28A509FE21885394002B177C /* NBNumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5097C21885394002B177C /* NBNumberFormat.m */; };
+		28A509FF21885394002B177C /* PhoneNumberMetaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A5097E21885394002B177C /* PhoneNumberMetaData.json */; };
+		28A50A0021885394002B177C /* NBPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5098021885394002B177C /* NBPhoneNumber.m */; };
+		28A50A0121885394002B177C /* PhoneNumberMetaDataForTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = 28A5098121885394002B177C /* PhoneNumberMetaDataForTesting.json */; };
+		28A50A0221885394002B177C /* NBPhoneNumberMetadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28A5098521885394002B177C /* NBPhoneNumberMetadata.plist */; };
+		28A50A0321885394002B177C /* NBPhoneNumberDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5098621885394002B177C /* NBPhoneNumberDesc.m */; };
+		28A50A0421885394002B177C /* JCPadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5098B21885394002B177C /* JCPadButton.m */; };
+		28A50A0521885394002B177C /* MZTimerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5098E21885394002B177C /* MZTimerLabel.m */; };
+		28A50A0621885394002B177C /* UIView+FrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5098F21885394002B177C /* UIView+FrameAccessor.m */; };
+		28A50A0721885394002B177C /* JCDialPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5099121885394002B177C /* JCDialPad.m */; };
+		28A50A0821885394002B177C /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A5099221885394002B177C /* UIView+Toast.m */; };
+		28A50A39218870FF002B177C /* CallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A50A38218870FF002B177C /* CallInfo.swift */; };
 		28E44F73218824560099EF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F72218824560099EF64 /* AppDelegate.swift */; };
 		28E44F75218824560099EF64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F74218824560099EF64 /* ViewController.swift */; };
 		28E44F78218824560099EF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E44F76218824560099EF64 /* Main.storyboard */; };
@@ -50,7 +67,38 @@
 		28A5079621882AAA002B177C /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Phone.swift; path = "App Files/Phone.swift"; sourceTree = "<group>"; };
 		28A5079821882AAA002B177C /* CallKitInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CallKitInstance.swift; path = "App Files/CallKitInstance.swift"; sourceTree = "<group>"; };
 		28A508872188377A002B177C /* PlivoVoiceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlivoVoiceKit.framework; path = Frameworks/PlivoVoiceKit.framework; sourceTree = "<group>"; };
-		28A5088A2188397B002B177C /* plivoIosQuickStart-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "plivoIosQuickStart-Bridging-Header.h"; sourceTree = "<group>"; };
+		28A5097521885394002B177C /* NBPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumber.h; sourceTree = "<group>"; };
+		28A5097621885394002B177C /* NBAsYouTypeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBAsYouTypeFormatter.m; sourceTree = "<group>"; };
+		28A5097721885394002B177C /* NBPhoneMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneMetaData.m; sourceTree = "<group>"; };
+		28A5097821885394002B177C /* NBPhoneNumberUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumberUtil.m; sourceTree = "<group>"; };
+		28A5097921885394002B177C /* NSArray+NBAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NBAdditions.m"; sourceTree = "<group>"; };
+		28A5097A21885394002B177C /* NBPhoneNumberDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumberDefines.h; sourceTree = "<group>"; };
+		28A5097B21885394002B177C /* NBPhoneNumberMetadataForTesting.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NBPhoneNumberMetadataForTesting.plist; sourceTree = "<group>"; };
+		28A5097C21885394002B177C /* NBNumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBNumberFormat.m; sourceTree = "<group>"; };
+		28A5097D21885394002B177C /* NBPhoneNumberDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumberDesc.h; sourceTree = "<group>"; };
+		28A5097E21885394002B177C /* PhoneNumberMetaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetaData.json; sourceTree = "<group>"; };
+		28A5097F21885394002B177C /* NBAsYouTypeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBAsYouTypeFormatter.h; sourceTree = "<group>"; };
+		28A5098021885394002B177C /* NBPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumber.m; sourceTree = "<group>"; };
+		28A5098121885394002B177C /* PhoneNumberMetaDataForTesting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetaDataForTesting.json; sourceTree = "<group>"; };
+		28A5098221885394002B177C /* NBPhoneMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneMetaData.h; sourceTree = "<group>"; };
+		28A5098321885394002B177C /* NSArray+NBAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NBAdditions.h"; sourceTree = "<group>"; };
+		28A5098421885394002B177C /* NBPhoneNumberUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPhoneNumberUtil.h; sourceTree = "<group>"; };
+		28A5098521885394002B177C /* NBPhoneNumberMetadata.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = NBPhoneNumberMetadata.plist; sourceTree = "<group>"; };
+		28A5098621885394002B177C /* NBPhoneNumberDesc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPhoneNumberDesc.m; sourceTree = "<group>"; };
+		28A5098721885394002B177C /* NBNumberFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBNumberFormat.h; sourceTree = "<group>"; };
+		28A5098921885394002B177C /* MZTimerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTimerLabel.h; sourceTree = "<group>"; };
+		28A5098A21885394002B177C /* UIView+FrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAccessor.h"; sourceTree = "<group>"; };
+		28A5098B21885394002B177C /* JCPadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPadButton.m; sourceTree = "<group>"; };
+		28A5098C21885394002B177C /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		28A5098D21885394002B177C /* JCDialPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDialPad.h; sourceTree = "<group>"; };
+		28A5098E21885394002B177C /* MZTimerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTimerLabel.m; sourceTree = "<group>"; };
+		28A5098F21885394002B177C /* UIView+FrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAccessor.m"; sourceTree = "<group>"; };
+		28A5099021885394002B177C /* JCPadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCPadButton.h; sourceTree = "<group>"; };
+		28A5099121885394002B177C /* JCDialPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDialPad.m; sourceTree = "<group>"; };
+		28A5099221885394002B177C /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		28A50A35218869B7002B177C /* plivoIosQuickStart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plivoIosQuickStart-Bridging-Header.h"; sourceTree = "<group>"; };
+		28A50A36218869E8002B177C /* plivoIosQuickStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = plivoIosQuickStart.entitlements; sourceTree = "<group>"; };
+		28A50A38218870FF002B177C /* CallInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallInfo.swift; sourceTree = "<group>"; };
 		28E44F6F218824560099EF64 /* plivoIosQuickStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plivoIosQuickStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E44F72218824560099EF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E44F74218824560099EF64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +148,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A5097321885394002B177C /* Third party */ = {
+			isa = PBXGroup;
+			children = (
+				28A5097421885394002B177C /* libPhoneNumber-iOS */,
+				28A5098821885394002B177C /* Other */,
+			);
+			path = "Third party";
+			sourceTree = "<group>";
+		};
+		28A5097421885394002B177C /* libPhoneNumber-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				28A5097521885394002B177C /* NBPhoneNumber.h */,
+				28A5097621885394002B177C /* NBAsYouTypeFormatter.m */,
+				28A5097721885394002B177C /* NBPhoneMetaData.m */,
+				28A5097821885394002B177C /* NBPhoneNumberUtil.m */,
+				28A5097921885394002B177C /* NSArray+NBAdditions.m */,
+				28A5097A21885394002B177C /* NBPhoneNumberDefines.h */,
+				28A5097B21885394002B177C /* NBPhoneNumberMetadataForTesting.plist */,
+				28A5097C21885394002B177C /* NBNumberFormat.m */,
+				28A5097D21885394002B177C /* NBPhoneNumberDesc.h */,
+				28A5097E21885394002B177C /* PhoneNumberMetaData.json */,
+				28A5097F21885394002B177C /* NBAsYouTypeFormatter.h */,
+				28A5098021885394002B177C /* NBPhoneNumber.m */,
+				28A5098121885394002B177C /* PhoneNumberMetaDataForTesting.json */,
+				28A5098221885394002B177C /* NBPhoneMetaData.h */,
+				28A5098321885394002B177C /* NSArray+NBAdditions.h */,
+				28A5098421885394002B177C /* NBPhoneNumberUtil.h */,
+				28A5098521885394002B177C /* NBPhoneNumberMetadata.plist */,
+				28A5098621885394002B177C /* NBPhoneNumberDesc.m */,
+				28A5098721885394002B177C /* NBNumberFormat.h */,
+			);
+			path = "libPhoneNumber-iOS";
+			sourceTree = "<group>";
+		};
+		28A5098821885394002B177C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				28A5098921885394002B177C /* MZTimerLabel.h */,
+				28A5098A21885394002B177C /* UIView+FrameAccessor.h */,
+				28A5098B21885394002B177C /* JCPadButton.m */,
+				28A5098C21885394002B177C /* UIView+Toast.h */,
+				28A5098D21885394002B177C /* JCDialPad.h */,
+				28A5098E21885394002B177C /* MZTimerLabel.m */,
+				28A5098F21885394002B177C /* UIView+FrameAccessor.m */,
+				28A5099021885394002B177C /* JCPadButton.h */,
+				28A5099121885394002B177C /* JCDialPad.m */,
+				28A5099221885394002B177C /* UIView+Toast.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		28A50A37218870ED002B177C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28A50A38218870FF002B177C /* CallInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		28E44F66218824560099EF64 = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +233,10 @@
 		28E44F71218824560099EF64 /* plivoIosQuickStart */ = {
 			isa = PBXGroup;
 			children = (
-				28A5088A2188397B002B177C /* plivoIosQuickStart-Bridging-Header.h */,
+				28A50A37218870ED002B177C /* Model */,
+				28A50A36218869E8002B177C /* plivoIosQuickStart.entitlements */,
+				28A5097321885394002B177C /* Third party */,
+				28A50A35218869B7002B177C /* plivoIosQuickStart-Bridging-Header.h */,
 				28A5079821882AAA002B177C /* CallKitInstance.swift */,
 				28A5079621882AAA002B177C /* Phone.swift */,
 				28A5079521882AAA002B177C /* Constants.h */,
@@ -253,6 +364,14 @@
 				TargetAttributes = {
 					28E44F6E218824560099EF64 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					28E44F82218824590099EF64 = {
 						CreatedOnToolsVersion = 10.0;
@@ -289,8 +408,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A50A0221885394002B177C /* NBPhoneNumberMetadata.plist in Resources */,
+				28A509FD21885394002B177C /* NBPhoneNumberMetadataForTesting.plist in Resources */,
+				28A50A0121885394002B177C /* PhoneNumberMetaDataForTesting.json in Resources */,
 				28E44F7D218824580099EF64 /* LaunchScreen.storyboard in Resources */,
 				28E44F7A218824580099EF64 /* Assets.xcassets in Resources */,
+				28A509FF21885394002B177C /* PhoneNumberMetaData.json in Resources */,
 				28E44F78218824560099EF64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,11 +496,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A50A0621885394002B177C /* UIView+FrameAccessor.m in Sources */,
+				28A50A39218870FF002B177C /* CallInfo.swift in Sources */,
+				28A50A0321885394002B177C /* NBPhoneNumberDesc.m in Sources */,
+				28A50A0721885394002B177C /* JCDialPad.m in Sources */,
+				28A509FA21885394002B177C /* NBPhoneMetaData.m in Sources */,
+				28A509FC21885394002B177C /* NSArray+NBAdditions.m in Sources */,
 				28A5088521883621002B177C /* Phone.swift in Sources */,
+				28A50A0421885394002B177C /* JCPadButton.m in Sources */,
+				28A50A0521885394002B177C /* MZTimerLabel.m in Sources */,
+				28A50A0821885394002B177C /* UIView+Toast.m in Sources */,
+				28A509FE21885394002B177C /* NBNumberFormat.m in Sources */,
 				28A5088421883602002B177C /* UtilClass.swift in Sources */,
+				28A50A0021885394002B177C /* NBPhoneNumber.m in Sources */,
 				28E44F75218824560099EF64 /* ViewController.swift in Sources */,
 				28E44F73218824560099EF64 /* AppDelegate.swift in Sources */,
+				28A509F921885394002B177C /* NBAsYouTypeFormatter.m in Sources */,
 				28A508862188362A002B177C /* CallKitInstance.swift in Sources */,
+				28A509FB21885394002B177C /* NBPhoneNumberUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +689,7 @@
 			baseConfigurationReference = 4DBAB878441DDC16939A2080 /* Pods-plivoIosQuickStart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = plivoIosQuickStart/plivoIosQuickStart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A277824BB5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -578,6 +715,7 @@
 			baseConfigurationReference = 16E69822E2E4B1D9A32CB227 /* Pods-plivoIosQuickStart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = plivoIosQuickStart/plivoIosQuickStart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A277824BB5;
 				FRAMEWORK_SEARCH_PATHS = (

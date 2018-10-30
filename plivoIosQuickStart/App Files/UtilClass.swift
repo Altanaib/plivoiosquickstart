@@ -117,7 +117,7 @@ class UtilClass: NSObject
         loadingView.layer.cornerRadius = 10
         
         activityIndicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40);
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.whiteLarge
+        activityIndicator.style = UIActivityIndicatorView.Style.whiteLarge
         activityIndicator.center = CGPoint(x: loadingView.frame.size.width / 2, y: loadingView.frame.size.height / 2)
         
         loadingView.addSubview(activityIndicator)
@@ -182,7 +182,7 @@ class UtilClass: NSObject
     }
     
     func displayAlertView(titleText: String, message: String, viewController: UIViewController) {
-        let errorAlert = UIAlertController(title: titleText, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let errorAlert = UIAlertController(title: titleText, message: message, preferredStyle: UIAlertController.Style.alert)
         
         viewController.present(errorAlert, animated: true, completion: nil)
         
@@ -236,39 +236,15 @@ class UtilClass: NSObject
     }
     
     
-    func addBoldText(fullString: NSString, boldPartsOfString: Array<NSString>, font: UIFont!, boldFont: UIFont!, textColor: UIColor!) -> NSAttributedString {
-        let nonBoldFontAttribute = [NSFontAttributeName:font!, NSForegroundColorAttributeName: textColor] as [String : Any]
-        let boldFontAttribute = [NSFontAttributeName:boldFont!, NSForegroundColorAttributeName: textColor] as [String : Any]
-        let boldString = NSMutableAttributedString(string: fullString as String, attributes:nonBoldFontAttribute)
-        for i in 0 ..< boldPartsOfString.count {
-            boldString.addAttributes(boldFontAttribute, range: fullString.range(of: boldPartsOfString[i] as String))
-        }
-        return boldString
-    }
-    
-    func alertTextAttributeString(fullString: NSString, boldPartsOfString: Array<NSString>, font: UIFont!, boldFont: UIFont!, textColor: UIColor!, boldTextColor: UIColor!) -> NSAttributedString {
-        
-        let nonBoldFontAttribute = [NSFontAttributeName:font!, NSForegroundColorAttributeName: textColor] as [String : Any]
-        let boldFontAttribute = [NSFontAttributeName:boldFont!, NSForegroundColorAttributeName: boldTextColor] as [String : Any]
-        let boldString = NSMutableAttributedString(string: fullString as String, attributes:nonBoldFontAttribute)
-        
-        for i in 0 ..< boldPartsOfString.count {
-            
-            boldString.addAttributes(boldFontAttribute, range: fullString.range(of: boldPartsOfString[i] as String))
-            
-        }
-        return boldString
-    }
-    
     func setNavbarBGImage(navgationBar:UINavigationBar)
     {
         let image =  UIImage(named:"Nav_BG")!
-        navgationBar.setBackgroundImage(image.resizableImage(withCapInsets: UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .stretch), for: .default)
+        navgationBar.setBackgroundImage(image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch), for: .default)
     }
     func setComNavbarBGImage(navgationBar:UINavigationBar)
     {
         let image =  UIImage(named:"com_nav_bg")!
-        navgationBar.setBackgroundImage(image.resizableImage(withCapInsets: UIEdgeInsetsMake(0, 0, 0, 0), resizingMode: .stretch), for: .default)
+        navgationBar.setBackgroundImage(image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch), for: .default)
     }
     // Round Corner UIVIEW
     class func setViewRoundCorner(cornerView : UIView) {
@@ -286,22 +262,7 @@ class UtilClass: NSObject
         return String(filteredCharacters)
     }
     
-    class func makeToastActivity() {
-        let appDelegate: AppDelegate? = (UIApplication.shared.delegate as? AppDelegate)
-        appDelegate?.window?.rootViewController?.view?.isUserInteractionEnabled = false
-        appDelegate?.window?.rootViewController?.view?.makeToastActivity(CSToastPositionCenter)
-    }
-    
-    class func hideToastActivity() {
-        let appDelegate: AppDelegate? = (UIApplication.shared.delegate as? AppDelegate)
-        appDelegate?.window?.rootViewController?.view?.isUserInteractionEnabled = true
-        appDelegate?.window?.rootViewController?.view?.hideToastActivity()
-    }
-    
-    class func makeToast(_ toastMsg: String) {
-        let appDelegate: AppDelegate? = (UIApplication.shared.delegate as? AppDelegate)
-        appDelegate?.window?.rootViewController?.view?.makeToast(toastMsg)
-    }
+
     
     /**
      *  User's authentication status

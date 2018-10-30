@@ -16,10 +16,8 @@ class Phone {
     private var outCall: PlivoOutgoing?
     
     // To register with SIP Server
-    
     func login(withUserName userName: String, andPassword password: String) {
-        
-        UtilClass.makeToastActivity()
+        //UtilClass.makeToastActivity()
         endpoint.login(userName, andPassword: password)
     }
     
