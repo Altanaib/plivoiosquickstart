@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28E44F73218824560099EF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F72218824560099EF64 /* AppDelegate.swift */; };
+		28E44F75218824560099EF64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F74218824560099EF64 /* ViewController.swift */; };
+		28E44F78218824560099EF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E44F76218824560099EF64 /* Main.storyboard */; };
+		28E44F7A218824580099EF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E44F79218824580099EF64 /* Assets.xcassets */; };
+		28E44F7D218824580099EF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E44F7B218824580099EF64 /* LaunchScreen.storyboard */; };
+		28E44F88218824590099EF64 /* plivoIosQuickStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F87218824590099EF64 /* plivoIosQuickStartTests.swift */; };
+		28E44F93218824590099EF64 /* plivoIosQuickStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E44F92218824590099EF64 /* plivoIosQuickStartUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28E44F84218824590099EF64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28E44F67218824560099EF64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28E44F6E218824560099EF64;
+			remoteInfo = plivoIosQuickStart;
+		};
+		28E44F8F218824590099EF64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28E44F67218824560099EF64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28E44F6E218824560099EF64;
+			remoteInfo = plivoIosQuickStart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28E44F6F218824560099EF64 /* plivoIosQuickStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plivoIosQuickStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E44F72218824560099EF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28E44F74218824560099EF64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28E44F77218824560099EF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28E44F79218824580099EF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28E44F7C218824580099EF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28E44F7E218824580099EF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E44F83218824590099EF64 /* plivoIosQuickStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plivoIosQuickStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E44F87218824590099EF64 /* plivoIosQuickStartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plivoIosQuickStartTests.swift; sourceTree = "<group>"; };
+		28E44F89218824590099EF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E44F8E218824590099EF64 /* plivoIosQuickStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plivoIosQuickStartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E44F92218824590099EF64 /* plivoIosQuickStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plivoIosQuickStartUITests.swift; sourceTree = "<group>"; };
+		28E44F94218824590099EF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28E44F6C218824560099EF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E44F80218824590099EF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E44F8B218824590099EF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28E44F66218824560099EF64 = {
+			isa = PBXGroup;
+			children = (
+				28E44F71218824560099EF64 /* plivoIosQuickStart */,
+				28E44F86218824590099EF64 /* plivoIosQuickStartTests */,
+				28E44F91218824590099EF64 /* plivoIosQuickStartUITests */,
+				28E44F70218824560099EF64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28E44F70218824560099EF64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28E44F6F218824560099EF64 /* plivoIosQuickStart.app */,
+				28E44F83218824590099EF64 /* plivoIosQuickStartTests.xctest */,
+				28E44F8E218824590099EF64 /* plivoIosQuickStartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28E44F71218824560099EF64 /* plivoIosQuickStart */ = {
+			isa = PBXGroup;
+			children = (
+				28E44F72218824560099EF64 /* AppDelegate.swift */,
+				28E44F74218824560099EF64 /* ViewController.swift */,
+				28E44F76218824560099EF64 /* Main.storyboard */,
+				28E44F79218824580099EF64 /* Assets.xcassets */,
+				28E44F7B218824580099EF64 /* LaunchScreen.storyboard */,
+				28E44F7E218824580099EF64 /* Info.plist */,
+			);
+			path = plivoIosQuickStart;
+			sourceTree = "<group>";
+		};
+		28E44F86218824590099EF64 /* plivoIosQuickStartTests */ = {
+			isa = PBXGroup;
+			children = (
+				28E44F87218824590099EF64 /* plivoIosQuickStartTests.swift */,
+				28E44F89218824590099EF64 /* Info.plist */,
+			);
+			path = plivoIosQuickStartTests;
+			sourceTree = "<group>";
+		};
+		28E44F91218824590099EF64 /* plivoIosQuickStartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28E44F92218824590099EF64 /* plivoIosQuickStartUITests.swift */,
+				28E44F94218824590099EF64 /* Info.plist */,
+			);
+			path = plivoIosQuickStartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28E44F6E218824560099EF64 /* plivoIosQuickStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E44F97218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStart" */;
+			buildPhases = (
+				28E44F6B218824560099EF64 /* Sources */,
+				28E44F6C218824560099EF64 /* Frameworks */,
+				28E44F6D218824560099EF64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plivoIosQuickStart;
+			productName = plivoIosQuickStart;
+			productReference = 28E44F6F218824560099EF64 /* plivoIosQuickStart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28E44F82218824590099EF64 /* plivoIosQuickStartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E44F9A218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStartTests" */;
+			buildPhases = (
+				28E44F7F218824590099EF64 /* Sources */,
+				28E44F80218824590099EF64 /* Frameworks */,
+				28E44F81218824590099EF64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28E44F85218824590099EF64 /* PBXTargetDependency */,
+			);
+			name = plivoIosQuickStartTests;
+			productName = plivoIosQuickStartTests;
+			productReference = 28E44F83218824590099EF64 /* plivoIosQuickStartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28E44F8D218824590099EF64 /* plivoIosQuickStartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E44F9D218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStartUITests" */;
+			buildPhases = (
+				28E44F8A218824590099EF64 /* Sources */,
+				28E44F8B218824590099EF64 /* Frameworks */,
+				28E44F8C218824590099EF64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28E44F90218824590099EF64 /* PBXTargetDependency */,
+			);
+			name = plivoIosQuickStartUITests;
+			productName = plivoIosQuickStartUITests;
+			productReference = 28E44F8E218824590099EF64 /* plivoIosQuickStartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28E44F67218824560099EF64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Altanai Bisht";
+				TargetAttributes = {
+					28E44F6E218824560099EF64 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					28E44F82218824590099EF64 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 28E44F6E218824560099EF64;
+					};
+					28E44F8D218824590099EF64 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 28E44F6E218824560099EF64;
+					};
+				};
+			};
+			buildConfigurationList = 28E44F6A218824560099EF64 /* Build configuration list for PBXProject "plivoIosQuickStart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28E44F66218824560099EF64;
+			productRefGroup = 28E44F70218824560099EF64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28E44F6E218824560099EF64 /* plivoIosQuickStart */,
+				28E44F82218824590099EF64 /* plivoIosQuickStartTests */,
+				28E44F8D218824590099EF64 /* plivoIosQuickStartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28E44F6D218824560099EF64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E44F7D218824580099EF64 /* LaunchScreen.storyboard in Resources */,
+				28E44F7A218824580099EF64 /* Assets.xcassets in Resources */,
+				28E44F78218824560099EF64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E44F81218824590099EF64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E44F8C218824590099EF64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28E44F6B218824560099EF64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E44F75218824560099EF64 /* ViewController.swift in Sources */,
+				28E44F73218824560099EF64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E44F7F218824590099EF64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E44F88218824590099EF64 /* plivoIosQuickStartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E44F8A218824590099EF64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E44F93218824590099EF64 /* plivoIosQuickStartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28E44F85218824590099EF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28E44F6E218824560099EF64 /* plivoIosQuickStart */;
+			targetProxy = 28E44F84218824590099EF64 /* PBXContainerItemProxy */;
+		};
+		28E44F90218824590099EF64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28E44F6E218824560099EF64 /* plivoIosQuickStart */;
+			targetProxy = 28E44F8F218824590099EF64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28E44F76218824560099EF64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28E44F77218824560099EF64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28E44F7B218824580099EF64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28E44F7C218824580099EF64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28E44F95218824590099EF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28E44F96218824590099EF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28E44F98218824590099EF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A277824BB5;
+				INFOPLIST_FILE = plivoIosQuickStart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28E44F99218824590099EF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A277824BB5;
+				INFOPLIST_FILE = plivoIosQuickStart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28E44F9B218824590099EF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A277824BB5;
+				INFOPLIST_FILE = plivoIosQuickStartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plivoIosQuickStart.app/plivoIosQuickStart";
+			};
+			name = Debug;
+		};
+		28E44F9C218824590099EF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A277824BB5;
+				INFOPLIST_FILE = plivoIosQuickStartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/plivoIosQuickStart.app/plivoIosQuickStart";
+			};
+			name = Release;
+		};
+		28E44F9E218824590099EF64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A277824BB5;
+				INFOPLIST_FILE = plivoIosQuickStartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = plivoIosQuickStart;
+			};
+			name = Debug;
+		};
+		28E44F9F218824590099EF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A277824BB5;
+				INFOPLIST_FILE = plivoIosQuickStartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plivo.plivoIosQuickStartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = plivoIosQuickStart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28E44F6A218824560099EF64 /* Build configuration list for PBXProject "plivoIosQuickStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E44F95218824590099EF64 /* Debug */,
+				28E44F96218824590099EF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E44F97218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E44F98218824590099EF64 /* Debug */,
+				28E44F99218824590099EF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E44F9A218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E44F9B218824590099EF64 /* Debug */,
+				28E44F9C218824590099EF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E44F9D218824590099EF64 /* Build configuration list for PBXNativeTarget "plivoIosQuickStartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E44F9E218824590099EF64 /* Debug */,
+				28E44F9F218824590099EF64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28E44F67218824560099EF64 /* Project object */;
+}
